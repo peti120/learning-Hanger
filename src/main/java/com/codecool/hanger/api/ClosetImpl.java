@@ -43,6 +43,8 @@ public class ClosetImpl implements Closet {
     public String getName() {
         return name;
     }
+
+    @Override
     public List<Hanger> getHangers() {
         return hangers;
     }

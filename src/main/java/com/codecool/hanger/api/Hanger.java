@@ -1,5 +1,7 @@
 package com.codecool.hanger.api;
 
+import com.codecool.hanger.api.exceptions.WrongClothException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +19,7 @@ public abstract class Hanger {
         clothes = new ArrayList<>();
     }
 
-    abstract void addToHanger(Clothes clothes);
+    abstract void addToHanger(Clothes clothes) throws WrongClothException;
 
 
     public String getName() {
