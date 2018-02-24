@@ -7,6 +7,8 @@ public class PantsHanger extends Hanger {
 
     @Override
     void addToHanger(Clothes clothes) {
-
+        getClothes().add(clothes);
+        setPantsOnHanger(getPantsOnHanger()+1);
     }
+
 }

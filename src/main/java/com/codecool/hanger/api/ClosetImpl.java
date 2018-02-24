@@ -22,7 +22,12 @@ public class ClosetImpl implements Closet {
 
     @Override
     public void removeFromCloset(String hangerName) {
-
+        for (Hanger hanger:hangers) {
+            if(hanger.getName().equals(hangerName)){
+                hangers.remove(hanger);
+                break;
+            }
+        }
     }
 
     @Override
