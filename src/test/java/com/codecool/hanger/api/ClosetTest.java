@@ -31,7 +31,7 @@ class ClosetTest {
         Hanger pantsHanger = new PantsHanger("Pants");
         closet.addToCloset(pantsHanger);
 
-        Throwable exception = assertThrows(NoSuchHangerException.class,
+        assertThrows(NoSuchHangerException.class,
                 ()->{closet.getHangerByName("HEHE");} );
     }
 }

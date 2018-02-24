@@ -19,7 +19,7 @@ class HangerTest {
         Hanger pantsHanger = new PantsHanger("Pants");
         Clothes shirt = new Shirt("TestShirt");
         Clothes pant = new Pant("TestPant");
-        Throwable exception = assertThrows(WrongClothException.class,
+        assertThrows(WrongClothException.class,
                 ()->{pantsHanger.addToHanger(shirt);} );
     }
 
