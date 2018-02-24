@@ -15,7 +15,7 @@ class HangerTest {
 
     }
     @Test
-    void testWrongClothes() throws WrongClothException {
+    void testWrongClothes(){
         Hanger pantsHanger = new PantsHanger("Pants");
         Clothes shirt = new Shirt("TestShirt");
         Clothes pant = new Pant("TestPant");
